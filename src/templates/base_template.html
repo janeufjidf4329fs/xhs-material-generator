@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiaohongshu Style Template</title>
+    <!-- Import Google Fonts for a modern, clean look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic body setup */
+        body {
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            width: 1242px; /* Set width to match Xiaohongshu image size */
+            height: 1660px; /* Set height to match Xiaohongshu image size */
+            /* A soft, warm gradient background popular in lifestyle posts */
+            background: linear-gradient(135deg, #FFC3A0 0%, #FFAFBD 100%);
+            display: flex; /* Use flexbox for centering */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            font-family: 'Noto Sans SC', sans-serif; /* Use a clean, modern font */
+        }
+
+        /* Main container for the content */
+        .container {
+            width: 1100px; /* Inner container width with padding */
+            height: 1520px; /* Inner container height with padding */
+            /* Semi-transparent white background for a soft, layered look */
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 50px; /* Rounded corners for a softer feel */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            display: flex; /* Use flexbox for layout */
+            flex-direction: column; /* Arrange items vertically */
+            padding: 80px; /* Generous padding for a spacious feel */
+            box-sizing: border-box; /* Include padding in the total width/height */
+        }
+
+        /* Title area styles */
+        .title-area {
+            text-align: center; /* Center the title text */
+            font-size: 80px; /* Large font size for the title */
+            font-weight: 700; /* Bold font for emphasis */
+            color: #333; /* Dark grey color for good contrast */
+            padding-bottom: 60px; /* Space below the title */
+            /* Subtle border to separate title from content */
+            border-bottom: 3px solid rgba(0,0,0,0.05);
+        }
+
+        /* Content area styles */
+        .content-area {
+            flex-grow: 1; /* Allow the content area to fill available space */
+            padding: 60px 0; /* Vertical padding for the content */
+            font-size: 48px; /* Large, readable font size for the body */
+            line-height: 2.0; /* Increased line spacing for readability */
+            color: #444; /* Slightly lighter grey for the body text */
+            text-align: left; /* Align text to the left for a classic look */
+        }
+
+        /* Footer area styles */
+        .footer-area {
+            text-align: center; /* Center the footer text */
+            font-size: 36px; /* Readable font size for the footer */
+            color: #888; /* Lighter grey for a less prominent footer */
+            padding-top: 60px; /* Space above the footer */
+            /* Subtle border to separate footer from content */
+            border-top: 3px solid rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title-area">
+            {{TITLE}}
+        </div>
+        <div class="content-area">
+            {{CONTENT}}
+        </div>
+        <div class="footer-area">
+            {{FOOTER}}
+        </div>
+    </div>
+</body>
+</html>
